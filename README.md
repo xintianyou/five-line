@@ -1,5 +1,5 @@
 # js手写五子棋
-
+[在线体验](https://codepen.io/luyouyuanfang/pen/MWZyRPN)
 1. 使用面向对象的方式,定义了FiveLine类来封装五子棋的逻辑。
 2. 合理的使用了构造函数,初始化了canvas,设置了像素Ratio等属性。
 3. 提取出可复用的utils方法,如getLinePoints计算线条坐标,getIntersection计算交点等。
