@@ -197,17 +197,9 @@ class FiveLine {
       // 监听是否已有五子相连
       const isWin = this.watchWin();
       if (isWin) {
-        console.log((this.curPlayer === "B" ? "小黑" : "小白") + "赢了");
-        // create a new div element
-        const newDiv = document.createElement("div");
-        // and give it some content
-        const newContent = document.createTextNode(
-          (this.curPlayer === "B" ? "小黑" : "小白") + "赢了"
-        );
-        // add the text node to the newly created div
-        newDiv.appendChild(newContent);
-        document.body.append(newDiv);
-
+        setTimeout(() => {
+          alert((this.curPlayer === "B" ? "小黑" : "小白") + "赢了")
+        }, 0)
         this.winner = this.curPlayer;
         return;
       }
